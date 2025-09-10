@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale= 1.0"/>
+        <title>Loop Cheat Sheet</title>
+        <link rel="stylesheet" href="code-quest-css/loop-cheat-sheet.css"/>
+    </head>
+    <body class="cheatsheet">
+        <h1 class="glow-title">∞Loop Cheat Sheet</h1>
+
+        <div id="cheatContent" class="content-box">
+            <h2>What is Loop?</h2>
+            <p> A loop let's you repeat a block of code multiple times—until a condition is met of for a set number of iterations</p>
+        </div>
+
+        <div class="box-row">
+        <!-- FOR LOOP -->
+        <div class="content-box1">
+  <h3 class="forloop">FOR LOOP</h3>
+  <p class="forloop-info">Use when you know <b>how many times</b> to repeat.</p>
+
+  <div class="js-sec">
+    <span class="js-text">Js</span>
+    <hr style="border: none; border-top: 1px solid white; margin: 10px 0;" class="rune-divider"/>
+    <div class="jsloop-sec">
+      <pre class="jsloop-para">
+ for (let i = 0; i < 5; i++) {
+  console.log(i);<t style="color: grey;">// 0 to 4</t>
+  }
+      </pre>
+    </div>
+  </div>
+    <div>
+       <li> i = 0: start</li>
+       <li> i < 5: condition </li>
+       <li> i++: increment</li>
+       <t>✓Best for counting, iterating arrays, or fixed repetitions</t>
+    </div>
+</div>
+
+<!-- WHILE LOOP -->
+
+    <div class="content-box2">
+        <h3 class="whileloop">WHILE LOOP</h3>
+        <p class="whileloop-info">Use when you want to repeat <b>as long as a condition is true</b></p>
+
+        <div class="js-sec">
+            <span class="js-text">Js</span>
+            <hr style="border: none; border-top: 1px solid white; margin: 10px 0;" class="rune-divider"/>
+            <div class="jswhileloop-sec">
+                <pre class="jswhileloop-para">
+    let i = 0;
+    while (i < 5) {
+      console.log(i);
+      i++;
+    }
+                </pre>
+            </div>
+        </div>
+        <t>✓Great for waiting on a condition or user input</t>
+    </div>
+    
+    <!-- DO WHILE LOOP -->
+
+    <div class="content-box3">
+        <h3 class="dowhile">DO WHILE LOOP</h3>
+        <p class="dowhile-info">Runs <b>at least once,</b> then checks the condition</p>
+
+    <div class="js-sec">
+        <span class="js-text">Js</span>
+        <hr style="border: none; border-top: 1px solid white; margin: 10px 0;" class="rune-divider"/>
+        <div class="jsdowhile-sec">
+            <pre class="jsdowhile-para">
+    let i = 0;
+      do {
+         console.log(i);
+           i++;
+     } while (i < 5);
+            </pre>
+        </div>
+     </div>
+     <t>✓Useful when you want one guaranteed execution before checking</t>
+    </div>
+    </div>
+    </body>
+</html>

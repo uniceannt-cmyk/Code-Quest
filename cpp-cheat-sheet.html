@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="code-quest-css/cpp-cheat-sheets.css">
+    </head>
+
+    <body>
+            <h1>C++ Cheat Sheets</h1>
+       
+            
+                
+<div>
+                <h3>Basic Structure of  C++ Programs</h3>
+                <div>
+                    <pre>
+// Header files
+#include<bits/stdc++.h>
+
+// std namespace contains 
+// various standard library components
+using namespace std;
+
+// main function is the starting 
+//point of program execution
+int main() {
+  
+    // This is the section where 
+    // we write code statements
+    return 0;
+}
+                    </pre>
+                </div>
+                </div>
+                
+
+                <div>
+<h3>Comments</h3>
+<div><p>Comments in C++ are used for providing an explanation of the code that makes it easier for others to understand the functionality of the code.
+     They are not executed by the compiler. Comments can also be used to temporarily disable specific statements of code without deleting them.
+</p><p>There are two types of comments:</p></div>
+<div class="cpp-t"><p><b>1. Single-lined</b></p></div>
+<div><p>We use two forward slashess // to indicate the single-line comment. For example, </p></div>
+<div><pre class="cpp-c">// This is a comment</pre></div>
+</div>
+                
+                <div>
+                    <div class="cpp-t"><p>2. Multi lined</p></div> 
+                    <div><p>We use /* to start multi-line comment and */ to end it. For example,</p></div>
+                     <div> <pre class="cpp-c">/* This is multi-lined comment.
+The below statement will print GeeksforGeeks.*/</pre></div>
+                      
+                </div>
+
+                <div>
+                    <h3>Variables</h3>
+                    <div><p>In C++, a variable is a container used to store data values: </p></div>
+                    <div class="cpp-c">
+                    <li>Variables must be declared before they can be used.</li>
+                    <li>Multiple variables can also be declared at one time.</li>
+                    <li>The name of a variable can contain alphabets, digits, and an underscore but the name of a variable must start with an alphabet or an underscore.</li>
+                    </div>
+                </div>
+
+                <div>
+                    <pre><b>Identifiers:</b>All variables in a program must be given unique names
+which are known as the identifiers so each variable can be identified
+uniquely.</pre>
+<pre><b>Constants:</b>Constants are the fixed values that remain unchanged
+during the execution of the program.</pre>
+                </div>
+
+                <div>
+                    <div class="cpp-t"><p>Syntax</p></div>
+                    <div class="cpp-c">
+                        <pre>// Declaring a single variable
+data_type var_name;
+
+// Declaring multiple variables
+data_type var1_name, var2_name, var3_name;</pre>
+                    </div>
+                </div>
+
+                <div>
+                    <div><h3>Data Types</h3></div>
+                    <div><p>Data types are the type of data that a variable can store in a program..</p></div>
+
+                    <div class="cpp-t"><p>1. Integer</p></div>
+                    <div class="cpp-c"><li>It is used to store integers.</li>
+                    <li>Integers tale 4bytes of memory.</li></div>
+
+                    <div class="cpp-t">Example</div>
+                    <div class="cpp-c"><pre>int var = 123;</pre></div>
+                </div>
+
+                <div>
+                    <div class="cpp-t"><p>2. Character</p></div>
+                    <div class="cpp-c">
+                        <li>It is used to store characters.</li>
+                        <li>It takes 1 bytes of memory.</li>
+                    </div>
+
+                    <div class="cpp-t">Example</div>
+                    <div class="cpp-c"><pre>char var = 'a';</pre></div>
+                </div>
+
+                <div>
+                    <div class="cpp-t"><p>3. Floating Point</p></div>
+                    <div class="cpp-c">
+                    <li>It is used for storing single-precision floating-point numbers.</li>
+                    <li>It takes 4 bytes of memory.</li>
+                </div>
+
+                <div>Example</div>
+                <div><pre>float num = 1.23;</pre></div>
+                </div>
+
+               <div>
+                <div class="cpp-t"><p>4. Double</p></div>
+                <div class="cpp-c">
+                    <li>It is used to store double-precision floating point numbers.</li>
+                    <li>It takes 8 bytes of memory.</li>
+                </div>
+
+                <div>Example</div>
+                <div><pre>double num = 1.2345;</pre></div>
+               </div> 
+                
+
+                <div>
+                    <div class="cpp-t"><p>5. Boolean</p></div>
+                    <div>
+                        <li>It is used to store logical values that can be either true of false.</li>
+                    </div>
+
+                    <div>Example</div>
+                    <div><pre>bool b = false;</pre></div>
+                </div>
+
+                <div>
+                    <div class="cpp-t"><p>6. String</p></div>
+                    <div class="cpp-c">
+                        <li>A string is a collection of characters surrounded by double quotes. 
+                        The string data type is used to store words or sentences.</li>
+                        <li>The string data type is part of the Standard Library and is defined in the &lt;string&gt; header file.</li>
+                        <li>We have to include &lt;string&gt; header file for using string class.</li>
+                    </div>
+
+                    <div>Example</div>
+                    <div><pre>string str = "HelloUser";</pre></div>
+                </div>
+
+                <div>
+                    <div><h3>Input and Output</h3></div>
+                    <div><p><b>1. Input from user: </b>We can take input from the user using cin from the iostream library. For example,</p></div>
+                    <div><pre>
+int var;
+cin >> var;
+                    </pre></div>
+                    
+                </div>
+
+                <div>
+                    <div><p><b>2. Output on the Console:</b> We can print output on the console using cout from the iostream library. For example,</p></div>
+                    <div><pre>cout << “Hello World”;</pre></div>
+                </div>
+
+                <div>
+                    <div><p><b>New Lines</b></p>
+                  <p>We can use<b> \n </b> character or <b> endl</b> to insert a new line. For example, </p>  </div>
+                  <div><pre>
+cout << "Hello World! \n";
+cout << "Hello World!" << endl;
+                  </pre></div>
+                </div>
+
+                <div>
+                    <h3>Conditional Statements</h3>
+                    <p><b>Conditional statements</b> allow us to control the flow of the program based on certain conditions.
+                         It helps us to run a specific section of code based on a condition.</p>
+
+                    <div>
+                       <div class="cpp-t"> <p>1. The if statement</p></div>
+                        <p><b>If statement</b> executes a block of code if and only if the given condition is true.</p>
+                    </div>
+
+                    <div><p>Syntax</p>
+                    </div>
+                    <div><pre>if (condition) {
+    // Code to be executed if the condition is true
+}</pre></div>
+                </div>
+
+                <div>
+                    <div class="cpp-t"><p>2. Nested if statement</p></div>
+                    <div><p>Syntax</p></div>
+                    <div>
+                        <pre>if (condition1) {
+    // Code to be executed
+    if (condition2) {
+        // Code to be executed
+    }
+}</pre>
+                    </div>
+                </div>
+            
+                <div>
+                    <div class="cpp-t"><p>3. The if-else statement</p></div>
+                    <div><p>In if-else statement, condition inside the if statement is true, then the code inside the if block will get executed,
+                         otherwise code inside the else block will get executed.</p></div>
+                    <div><p>Syntax</p></div>
+                    <div><pre>if (condition) {
+    // Code to be executed 
+    // if the condition is true
+} else {
+    // Code to be executed 
+    // if the condition is false
+}</pre></div>
+                </div>
+
+                <div>
+                    <div class="cpp-t"><p>4. The else-if statement</p></div>
+                    <p>The else if statement allows you to check for multiple conditions sequentially.</p>
+                    <div><p>Syntax</p></div>
+                    <div><pre>if (condition1) {
+    // Code to be executed 
+    // if condition1 is true
+} else if (condition2) {
+    // Code to be executed if 
+    // condition1 is false and 
+    // condition2 is true
+} else {
+    // Code to be executed if 
+    // all conditions are false
+}</pre></div>
+                </div>
+
+                <div>
+                    <div class="cpp-t"><p>5. Shorthand if else (Ternary Operator)</p></div>
+                    <p>Shorthand if else also known as the Ternary operator (?:) works just like if-else statements that can be used to reduce the number of lines of code.</p>
+                    <div><p>Syntax</p></div>
+                    <div><pre>(condition) ? expression1 : expression2;</pre>
+                   <p>Condition <b> inside round brackets () </b> is true, expression1 will be evaluated and it will become the result of the expression. 
+                    Otherwise, if the condition is false, expression2 will be evaluated and it will become the result.</p> </div>
+                </div>
+
+                <div>
+                    <div class="cpp-t"><p>6. Switch Statement</p></div>
+                    <div><p>The switch statement evaluates the expression and compares the value of the expression with the cases. 
+                        If the expression matches the value of any of the cases, the code associated with that case will be executed.</p></div>
+                </div>
+
+                <div>
+                    <div class="cpp-t"><p>7. Break and Default</p></div>
+                    <div><p>The break keyword is used to exit the switch statement when one of the cases matches, while the default keyword, which is optional,
+                         executes when none of the cases match the value of the expression.</p></div>
+                    <div><p>Syntax</p></div>
+                    <div>
+                        <pre>switch (expression) {
+    case value1:
+        // Code to be executed if 
+        // expression matches value1
+        break;
+    case value2:
+        // Code to be executed if 
+        // expression matches value2
+        break;
+    // ...
+    default:
+        // Code to be executed if 
+        // expression does not match any case
+        break;
+                        }</pre> <p>Note: Default keywords is used with switch statements.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Loops</h3>
+                    <p>Loops are used to repeatedly execute a block of code multiple times.</p>
+                    <p><b>Types of Loops</b></p>
+
+                    <div class="cpp-t"><p>1. For Loop</p>
+                    <p>For loop helps us to execute a block of code a fixed number of times.</p></div>
+                    <div><p>Syntax: </p></div>
+                    <div><pre>for (initialization expr; test expr; update expr) {
+    // body of the for loop
+}</pre></div>
+                </div>
+
+                <div>
+                    <div class="cpp-t"><p>2. While Loop</p></div>
+                    <p>While loop repeatedly executes a block of code till the given condition is true.</p>
+                   <div> <p>Syntax</p></div>
+                   <div><pre>while (condition) {
+   // statements
+   update_condition;
+}</pre></div>
+                </div>
+                
+                <div>
+                    <div class="cpp-t"><p>3. Do-While Loop</p></div>
+                    <div><p>Do-while loop also executes the block of code till the condition is true but the difference between a while and a
+                         do-while loop is that the do-while executes the code once without checking the condition and the test condition is tested at the end of the loop body.</p></div>
+                    <div><p>Syntax</p></div>
+                    <div><pre>do {
+    // Body of do-while loop
+} while (condition);
+                    </pre>
+                </div>
+
+                <div>
+                    <h3>Arrays</h3>
+                    <div><p>An array is a data structure that allows us to store a fixed number of elements of the same data type in contiguous memory locations.</p></div>
+                    <div><p>Syntax:</p></div>
+                    <div><pre>dataType array_name[size];</pre>
+                  <p>where,</p></div>
+                  <div class="cpp-c">
+                    <li><b>data_type:</b> Type of data to be stored in the array.</li>
+                <li><b>array_name:</b> Name of the array.</li>
+            <li><b>size: </b>Size of array.</li></div>
+
+            <div><p>Example</p>
+            <pre>#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+  
+    // Declare and initialize an array of strings
+    string fruits[] = {"Apple", "Banana", "Orange", "Grapes"};
+
+    // Access and print each element of the array
+    for (int i = 0; i < 4; i++) {
+        cout << "Fruit at index " << i << ": " << fruits[i] << endl;
+    }
+
+    return 0;
+}</pre>
+<p><b>Output</b>
+<pre>Fruit at index 0: Apple
+Fruit at index 1: Banana
+Fruit at index 2: Orange
+Fruit at index 3: Grapes</pre></p>
+</div>
+                </div>
+
+                <div>
+                    <h3>Multi-Dimensional Arrays</h3>
+                    <div class="cpp-c"><p>Multi-dimensional arrays are known as arrays of arrays that store similar types of data in tabular form.</p></div>
+                    <div><p>Syntax</p></div>
+                    <div><pre>data_type array_name[size1][size2]....[sizeN];</pre>
+                    <p>where <b>size1, size2,…, sizeN are </b> size of each dimension.</p></div>
+
+                    <div><p><b>2-Dimensional Arrays</b>are the most commonly used multi-dimensional arrays in C++.</p></div>
+                    <div><p>Example</p></div>
+                    <div><pre>#include <iostream>
+using namespace std;
+int main()
+{
+    // Declaration and initialization of a 2D array
+    int arr[3][4] = { { 1, 2, 3, 4 },
+                      { 5, 6, 7, 8 },
+                      { 9, 10, 11, 12 } };
+
+    // Accessing elements in the 2D array
+    // Output: 1
+    cout << "Element at arr[0][0]: " << arr[0][0] << endl;
+    // Output: 7
+    cout << "Element at arr[1][2]: " << arr[1][2] << endl;
+
+    // Changing the value of an element
+    // Output: 20
+    arr[2][3] = 20;
+    cout << "Modified element at arr[2][3]: " << arr[2][3]
+         << endl;
+
+    // Nested loops for iterating through the 2D array
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 4; j++) {
+            cout << arr[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}</pre>
+<p><b>Output</b></p>
+<pre>Element at arr[0][0]: 1
+Element at arr[1][2]: 7
+Modified element at arr[2][3]: 20
+1 2 3 4 
+5 6 7 8 
+9 10 11 20 </pre></div>
+                </div>
+
+                <div>
+                    <h3>Vectors</h3>
+                    <p>Vectors are a dynamic array-like data structure that stores elements of the same data type
+                    in a contiguous fashion that can resize itself automatically unlike arrays which mean vectors 
+                    can grow when an element is inserted or shrink when an element is deleted.</p>
+
+                    <div class="cpp-c">
+                        <li>Vectors are present in C++ Standard Template Library (STL).</li>
+                        <li>We have to #include <vector> header file in our C++ program to use vectors.</li>
+                    </div>
+
+                    <div><p>Syntax</p></div>
+                    <div><pre>vector &lt;data_type&gt; vector_name;</pre></div>
+                    <div class="cpp-t"><p>Commonly used Vector Functions</p></div>
+                    <div class="cpp-c">
+                        <li><b>push_back()</b> - It is used to insert the elements at the end of the vector.</li>
+                        <li><b>pop_back()</b> - It is used to pop or remove elements from the end of the vector.</li>
+                        <li><b>clear() </b>- It is used to remove all the elements of the vector.</li>
+                        <li><b>empty()</b> - It is used to check if the vector is empty.</li>
+                        <li><b>at(i)</b> - It is used to access the element at the specified index 'i'.</li>
+                        <li><b>front()</b> - It is used to access the first element of the vector.</li>
+                        <li><b>back()</b> - It is used to access the last element of the vector.</li>
+                        <li><b>erase()</b> - It is used to remove an element at a specified position.</li>
+                    </div>
+                    <div><p>Example:</p></div>
+                    <div>
+                        <pre>#include <iostream>
+#include <vector>
+using namespace std;
+int main()
+{
+    // Create an empty vector
+    vector<int> numbers;
+
+    // push_back()
+    numbers.push_back(10);
+    numbers.push_back(20);
+    numbers.push_back(30);
+
+    // Accessing elements using at()
+    // Output: 10
+    cout << "Element at index 0: " << numbers.at(0) << endl;
+    // Output: 20
+    cout << "Element at index 1: " << numbers.at(1) << endl;
+
+    // front() and back()
+    // Output: 10
+    cout << "First element: " << numbers.front() << endl;
+    // Output: 30
+    cout << "Last element: " << numbers.back() << endl;
+
+    // pop_back()
+    // Remove the last element
+    numbers.pop_back();
+
+    // erase()
+    // Remove the element at index 1
+    numbers.erase(numbers.begin() + 1);
+
+    // empty()
+    if (numbers.empty()) {
+        cout << "Vector is empty" << endl;
+    }
+    else {
+        cout << "Vector is not empty" << endl;
+    }
+
+    // clear()
+    // Remove all elements
+    numbers.clear();
+
+    if (numbers.empty()) {
+        cout << "Vector is empty" << endl;
+    }
+    else {
+        cout << "Vector is not empty" << endl;
+    }
+
+    return 0;
+}</pre>
+<p><b>Output</b></p>
+<div><pre>Element at index 0: 10
+Element at index 1: 20
+First element: 10
+Last element: 30
+Vector is not empty
+Vector is empty</pre></div>
+                    </div>
+                </div>
+</div>
+    </body>
+</html>

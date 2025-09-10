@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0" />
+        <title>Debugging Tips</title>
+        <link rel="stylesheet" href="code-quest-css/debugging-tips.css"/>
+     </head>
+    <body>
+        <h1>🛠Debugging Tips</h1>
+
+        <div id="emoji-left"></div>
+        <div id="emoji-right"></div>
+    <div id="main-content">
+        <div class="box-row">    
+        <div class="debug-box">
+        <div class="tabs"></div>
+        <div id="tips-content" class="content-box">
+         <h2>Read the Error Message</h2>
+         <p><i>"The compiler speaks—listen."</i></p>
+            <li>Don't panic. Read the full message.</li>
+            <li>Look for line numbers, variable names, or keywords.</li>
+            <li>If it says "undefined", check your spelling or scope.</li>
+</div>
+        </div>
+    
+        <div class="debug-box1">
+            <h2>Use Conse Logs Like Breadcrumbs</h2>
+                <div class="jsdebug-sect">
+                 <span class="js-text">Js</span>
+                     <hr style="border:none; border-top: 1px solid white; margin: 10px 0;" class="rune-divider"/>
+                     <div class="jscode-sect">
+                        <pre class="debug-info">
+     console.log("Step 1 reached");
+     console.log("Value of i:", i)
+                        </pre>
+                     </div> 
+                   </div>
+                   <div>
+                    <li>Place logs before and after suspicious lines.</li>
+                    <li>Use clear labels so you know what each log means.</li>
+                   </div>                 
+        </div>
+
+        <div class="debug-box2">
+            <h2>Check Your Loop Conditions</h2>
+            <li>Infinite loop? Look at your <b>while</b>  or <b>for</b> condition.</li>
+            <li>Is your counter <b>(i++)</b> actually changing?</li>
+            <li>Are you using <b> = </b> instead of <b> == </b> or <b> === </b> ?</li>
+        </div>
+
+        <div class="debug-box3">
+            <h2>Simplify the Problem</h2>
+            <p><i>"When the scroll is tangled, unroll it one line at a time."</i></p>
+                <li>Comment out the parts of your code.</li>
+                <li>Test small chunk in isolation.</li>
+                <li>Reduce complexity until the bug reveals itself.</li>
+        </div>
+
+        <div class="debug-box4">
+            <h2>Use Rubber Duck Debugging</h2>
+            <li>Explain your code out loud—even to a plushie.</li>
+            <li>Talking through logic often reveals hidden assumptions.</li>
+        </div>
+
+        <div class="debug-box5">
+            <h2>Check for Common Mistakes</h2>
+            <li>Misspelled variable names.</li>
+            <li>Missing semicolon or brackets.</li>
+            <li>Wrong data types (e.g.,string vs number)</li>
+        </div>
+
+        <div class="debug-box6">
+            <h2>Use a Debugger or Step-Through Tool</h2>
+            <li>Step through your code line by line.</li>
+            <li>Watch how variables change in real time.</li>
+        </div>
+
+        <div class="debug-box7">
+            <h2>Take Breaks</h2>
+            <p><i>"Sometimes the bug hides in your brain fog."</i></p>
+            <li>Walk away for 5 minutes.</li>
+            <li>Come back with fresh eyes and renewed clarity.</li>
+        </div>
+    </div>
+    </div>
+    <script src="code-quest-js/debugging-tips.js"></script>
+    <body>
+</html>

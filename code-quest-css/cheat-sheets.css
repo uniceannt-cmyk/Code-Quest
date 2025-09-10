@@ -1,0 +1,148 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: hsl(34, 70%, 87%);
+  color: #3e2723;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 50px;
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-shadow: 0 0 6px #ff9c12, 0 0 12px #ff9500, 0 0 18px #aa6300;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px; 
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+.py-box, .jv-box, .cpp-box, .js-box {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(255, 152, 0, 0.4);
+  padding: 50px 50px; 
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 380px; 
+  min-width: 320px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-top: 6px solid transparent;
+  min-height: 450px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    gap: 20px;
+  }
+}
+
+.py-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px #26a69a;
+}
+
+.jv-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px #f57c00;
+}
+
+.cpp-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px #1565c0;
+}
+
+.js-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px #fbc02d;
+}
+
+.py-title, .jv-title, .cpp-title, .js-title {
+  font-size: 4rem; 
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.py-desc, .jv-desc, .cpp-desc, .js-desc {
+  font-size: 1.8rem; 
+  font-style: italic;
+  color: #6d4c41;
+  font-weight: 700;
+}
+
+.py-box {
+  border-top-color: #26a69a;
+}
+.py-title {
+  color: #00796b;
+}
+
+.jv-box {
+  border-top-color: #f57c00;
+}
+.jv-title {
+  color: #e65100;
+}
+
+.cpp-box {
+  border-top-color: #1565c0;
+}
+.cpp-title {
+  color: #0d47a1;
+}
+
+.js-box {
+  border-top-color: #fbc02d;
+}
+.js-title {
+  color: #f9a825;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px;
+    display: flex; 
+  }
+  .py-box, .jv-box, .cpp-box, .js-box {
+    max-width: 100%;
+  }
+  h1 {
+    font-size: 3.5rem; 
+    margin-bottom: 30px;
+  }
+  .py-title, .jv-title, .cpp-title, .js-title {
+    font-size: 3rem; 
+  }
+  .py-desc, .jv-desc, .cpp-desc, .js-desc {
+    font-size: 1.5rem; 
+  }
+}
+
+.py-b,
+.jv-b,
+.js-b,
+.cpp-b{
+    text-decoration: none;
+    display: inline-block;
+}

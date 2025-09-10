@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link href="code-quest-css/looping-dungeon.css" rel="stylesheet">
+<title>The Looping Dungeon</title>
+</head>
+<body>
+<header>
+  <div class="logo">LD</div>
+  <div>
+    <h1>The Looping Dungeon</h1>
+    <div class="subtitle">Navigate maze-like loops, fix buggy loop-tiles and rescue the captured variable.</div>
+  </div>
+</header>
+
+<main>
+  <section class="card left">
+    <div class="hud">
+      <div class="pill">Level <span id="ui-level">1</span></div>
+      <div class="pill">Score <span id="ui-score">0</span></div>
+      <div class="pill">Keys <span id="ui-keys">0</span></div>
+      <div class="pill">Time <span id="ui-time">0s</span></div>
+      <div style="flex:1"></div>
+      <div class="muted">Move: <span class="kbd">↑↓←→</span> or WASD — Enter to interact</div>
+    </div>
+
+    <div class="grid-wrap" style="margin-top:8px">
+      <div class="board card" id="boardWrap"></div>
+
+      <div style="width:220px;display:flex;flex-direction:column;gap:10px">
+        <div class="card center" style="flex-direction:column;gap:6px">
+          <div class="muted">Objective</div>
+          <div class="big" id="objective">Rescue the captured variable</div>
+          <div class="muted" style="font-size:13px">Solve small code puzzles to disarm bugs and collect keys.</div>
+        </div>
+
+        <div class="card">
+          <div style="font-weight:800;margin-bottom:6px">Legend</div>
+          <div class="legend">
+            <div class="k"><div style="width:18px;height:18px;border-radius:4px;background:linear-gradient(180deg,#0c2936,#05202a);border:1px solid rgba(255,255,255,0.02)"></div> safe tile</div>
+            <div class="k"><div style="width:18px;height:18px;border-radius:4px;background:linear-gradient(180deg,#402a2a,#2a1010)"></div> bug trap</div>
+            <div class="k"><div style="width:18px;height:18px;border-radius:4px;background:linear-gradient(180deg,#2a3b2a,#163116)"></div> key</div>
+            <div class="k"><div style="width:18px;height:18px;border-radius:4px;background:linear-gradient(180deg,#2a203b,#161022)"></div> captured variable</div>
+          </div>
+        </div>
+
+        <div class="card center" id="controls">
+          <button class="btn" id="restartBtn">Restart Level</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <aside class="card">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <div style="font-weight:800">Console / Puzzles</div>
+      <div class="muted" id="puzzle-count">Puzzles solved: 0</div>
+    </div>
+
+    <div class="console" id="console"></div>
+
+    <div style="margin-top:12px;display:flex;gap:8px">
+      <button class="btn" id="hintBtn">Use Hint (-20)</button>
+      <button class="btn" id="skipBtn">Reveal (-100)</button>
+    </div>
+
+  </aside>
+</main>
+
+<footer>Tip: read the short snippet carefully — missing pieces are small (like `arr[i]`, `i`, `max`, or `.reverse().toString()`).</footer>
+
+<!-- Puzzle modal -->
+<div id="modal" style="position:fixed;left:0;top:0;right:0;bottom:0;display:none;align-items:center;justify-content:center;background:rgba(2,6,12,0.6);z-index:9999">
+  <div style="width:680px;max-width:94%;background:linear-gradient(180deg,#071a28,#05222b);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.04);box-shadow:0 14px 50px rgba(3,6,10,0.8)">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <div style="font-weight:900">Fix the Bug — Missing Piece</div>
+      <button onclick="closeModal()" style="background:transparent;border:none;color:var(--muted);font-weight:900;cursor:pointer">✕</button> <!--dfknd-->
+    </div>
+    <div style="margin-top:10px;background:#011821;padding:12px;border-radius:8px;font-family:var(--mono);font-size:13px;color:#dff6ff">
+      <pre id="puzzleCode" style="margin:0;white-space:pre-wrap;"></pre>
+    </div>
+
+    <div style="display:flex;gap:8px;margin-top:12px">
+      <input id="puzzleAnswer" style="flex:1;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:#dff6ff;font-family:var(--mono)" placeholder="Type the missing code here (e.g. arr[i])"/>
+      <button class="btn" id="puzzleSubmit">Submit</button>
+    </div>
+
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center">
+      <div class="muted" id="puzzleHintText">Hint hidden</div>
+      <div class="muted" id="puzzlePenalty">No penalty yet</div>
+    </div>
+  </div>
+</div>
+<script src="code-quest-js/looping-dungeon.js"></script>
+</body>
+</html>

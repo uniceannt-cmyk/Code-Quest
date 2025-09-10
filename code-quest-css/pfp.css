@@ -1,0 +1,33 @@
+.Profile {
+  width: 280px;
+  margin: 20px auto;
+  text-align: center;
+  background: #2a2a3d;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 10px #00f2ff;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.upload {
+  cursor: pointer;
+  display: block;
+}
+
+#set-pfp {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 8px #00f2ff;
+  transition: transform 0.3s ease;
+}
+
+#set-pfp:hover {
+  transform: scale(1.05);
+}
+
+input[type="file"] {
+  display: none;
+}

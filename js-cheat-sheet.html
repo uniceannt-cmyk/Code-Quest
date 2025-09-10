@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0"/>
+        <link href="code-quest-css/js-cheat-sheet.css" rel="stylesheet">
+        <title>JS CHEAT SHEET</title>
+    </head>
+
+<body>
+    <h1> JS Cheat Sheet</h1>
+
+        <div>
+            <div>
+                <p>Including JavaScript in an HTML Page :</p>
+                <pre>&lt;script type="text/javascript"&gt;
+    //JS code goes here
+&lt;/script&gt;</pre>
+                </div>
+
+                        <div>
+                             <p>Call an External JavaScript File :</p>
+                    <pre>&lt;script src="myscript.js"&gt;&lt;/script&gt;</pre>
+                        </div>
+
+                        <div>
+                            <p>Comments :</p>
+                            <pre>Single line Comments : //Only Single line Content</pre>
+                            <pre>Multi-line Comments : /*comment here*/</pre>
+                        </div>
+
+                        <div>
+                            <p>Variables in JavaScript : </p>
+                            <pre>var   : Common variable scoped to function.</pre>
+                            <pre>const : Immutable variable.</pre>
+                            <pre>let   : Mutable variable.</pre>
+                        </div>
+
+                        <div>
+                            <p>Data Types : </p>
+                            <pre>Numbers                   : var age = 23</pre>
+                            <pre>Variables                 : var x</pre>
+                            <pre>Text (strings)            : var a = "init"</pre>
+                            <pre>Opreerations              : var b = 1 + 2 + 3</pre>
+                            <pre>True or False Statements  : var c = true</pre>
+                            <pre>Constant Numbers          : const preI = 3.14</pre>
+                            <pre>Objects                   : var name = {firstN: "John", lastN:"Doe"}</pre>  
+                        </div>
+
+                        <div>
+                            <p>Object : </p>
+                            <pre>var person = {
+                                firsName: "Coding",
+                                lastName: "Stella",
+                                age: 20,
+                                nationality: "India"
+                            };
+                            </pre>
+                        </div>
+</div>
+
+                        <div>
+                            <div>
+                                <p>Array Method :</p>
+                                <pre>concat()       : Combine arrays.</pre>
+                                <pre>indexOf()      : Finds value index.</pre>
+                                <pre>join()         : Converts to string.</pre>
+                                <pre>lastIndexOf()  : Finds last value index.</pre>
+                                <pre>pop()          : Removes last element.</pre>
+                                <pre>push()         : Adds to end.</pre>
+                                <pre>reverse()      : Reverses order.</pre>
+                                <pre>shift()        : Removes first element.</pre>
+                                <pre>slice()        : Extracts portion.</pre>
+                                <pre>toString()     : Sorts Elements.</pre>
+                                <pre>unshift()      : Adds to beggining.</pre>
+                                <pre>valueOf()      : Returns primitive value.</pre>
+                            </div>
+
+                            <div>
+                                <p>Basic Operators:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comparison Operators:</p>
+                                <pre>+  : Addition                              ==   : Equal to</pre>
+                                <pre>-  : Subtraction                           ===  : Equal value and type</pre>
+                                <pre>*  : Multiplication                        !=   : Not equal</pre>
+                                <pre>/  : Division                              !==  : Not equal value or type </pre>
+                                <pre>(...) : Grouping                           >    : Greater than </pre>
+                                <pre>%  : Modulus (remainder)                   &lt;    : Less than</pre>
+                                <pre>++ : Increment                             >=   : Greater than or equal to</pre>
+                                <pre>-- : Decrement                             &lt;=   : Less than or equal to</pre>
+                            </div>
+
+                            <div>
+                                <p>Bitwise Operators :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Logical Operators :</p>
+                                <pre>&   : AND                                                && : Logical AND</pre>
+                                <pre>|   : OR                                                 || : Logical OR</pre>
+                                <pre>~   : NOT                                                !  : Logical Not</pre>
+                                <pre>^   : XOR                                                                 </pre>
+                                <pre>&lt;&lt;  : Left shift</pre>
+                                <pre>>>  : Right shift</pre>
+                                <pre>>>> : Zero-fill right shift</pre>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <p>Global Functions :</p>
+                                <pre>decodeURI()                : Decodes a URI.</pre>
+                                <pre>decodeURIComponent()       : Decodes a URI component.</pre>
+                                <pre>encodeURI()                : Encodes a URI.</pre>
+                                <pre>encodeURIComponents        : Encodes a URI component.</pre>
+                                <pre>eval()                     : Evaluates JavaScript code.</pre>
+                                <pre>isFinite()                 : Checks if a value is finite.</pre>
+                                <pre>isNaN()                    : Checks if a value is NaN.</pre>
+                                <pre>Number()                   : Converts to a number.</pre>
+                                <pre>parseFloat()               : Parses a string to a float.</pre>
+                                <pre>parseInt()                 : Parses a string to an integer.</pre>
+                            </div>
+
+                            <div>
+                                <p>Outputting data :</p>
+                                <pre>alert()                     : Shows a message in a popup.</pre>
+                                <pre>confirm()                   : Asks for yes/no confirmation.</pre>
+                                <pre>console.log()               : Prints to the browser console or debugging.</pre>
+                                <pre>document.write()            : Writes directly to the webpage.</pre>
+                                <pre>prompt()                    : Gets input from the user.</pre>
+                            </div>
+                            
+                            <div>
+                                <p>Loops :</p>
+                                <pre>for                        : Common loop structure in JavaScript.</pre>
+                                <pre>while                      : Executes a loop based on a condition.</pre>
+                                <pre>do while                   : Executes at least once and then checks the condition.</pre>
+                                <pre>break                      : Terminates the loop.</pre>
+                                <pre>continue                   : Skips part of the loop based on a condition.</pre>
+                            </div>
+
+                            <div>
+                                <p>If else Statement :</p>
+                                <pre>if (condition){
+     // Do something if condition is met
+ } else{
+    // Do something if condition is not met
+}
+                                </pre>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <p>String Methods : </p>
+                                <pre>charAt()                   : Gets a character at a specific position.</pre>
+                                <pre>charCodeAt()               : Gets the Unicode of a character.</pre>
+                                <pre>concat()                   : Joins strings together.</pre>
+                                <pre>fromCharCode()             : Creates a string from Unicode values.</pre>
+                                <pre>indexOf()                  : Finds the first occurence of a text.</pre>
+                                <pre>lastIndexOf()              : Finds the last occurence of a text.</pre>
+                                <pre>match()                    : Finds matches against a pattern.</pre>
+                                <pre>replace()                  : Replaces text in a string.</pre>
+                                <pre>search()                   : Finds a text and returns its position.</pre>
+                                <pre>slice()                    : Extracts parts of a string.</pre>
+                                <pre>split()                    : Splits a string into a array.</pre>
+                                <pre>substr()                   : Extracts a specified number of characters.</pre>
+                                <pre>substring()                : Extracts characters between two indices.</pre>
+                                <pre>toLowerCase()              : Converts to lowercase.</pre>
+                                <pre>toUpperCase()              : Converts to uppercase.</pre>
+                                <pre>valueOf()                  : Returns the primitive value of a string.</pre>
+                            </div>
+
+                            <div>
+                                <p>Maths Methods: </p>
+                                <pre>abs(x)                  : Absolute value of x.</pre>
+                                <pre>acos(x)                 : Arcosine of x.</pre>
+                                <pre>asin(x)                 : Arcsine of x.</pre>
+                                <pre>atan(x)                 : Arctangent of x.</pre>
+                                <pre>atan2(y, x)             : Arctangent of y/x.</pre>
+                                <pre>ceil(x)                 : Round up to the nearest integer.</pre>
+                                <pre>cos(x)                  : Cosine of x.</pre>
+                                <pre>exp(x)                  : Exponential value of x.</pre>
+                                <pre>floor(x)                : Round down to the nearest integer.</pre>
+                                <pre>log(x)                  : Natural logarithm of x.</pre>
+                                <pre>max(x, y, ...)          : Maximum value.</pre>
+                                <pre>min(x, y, ...)          : Minimum value.</pre>
+                                <pre>pow(x, y)               : x raised to the power of y.</pre>
+                                <pre>random()                : Random number between 0 and 1.</pre>
+                                <pre>round(x)                : Round to the nearest integer.</pre>
+                                <pre>sin(x)                  : Sine of x.</pre>
+                                <pre>sqrt(x)                 : Square root of x.</pre>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <p>Maths Properties :</p>
+                                <pre>E            : Euler's number.</pre>
+                                <pre>LN2          : Natural logarithm of 2.</pre>
+                                <pre>LN10         : Natural logarithm of 10.</pre>
+                                <pre>LOG2E        : Base 2 logarithm of E.</pre>
+                                <pre>LOG10E       : Base 10 logarithm of E.</pre>
+                                <pre>PI           : The number π (pi). </pre>
+                                <pre>SQRT1_2      : Square root of 1/2.</pre>
+                                <pre>SQRT2        : Square root of 2.</pre>
+                            </div>
+
+                            <div>
+                                <p>Number Properties : </p>
+                                <pre>MAX_VALUE          : Maximum representable number.</pre>
+                                <pre>MIN_VALUE          : Smallest positive number.</pre>
+                                <pre>NaN                : Not-a-Number value.</pre>
+                                <pre>NEGATIVE_INFINITY  : Negative Infinity value.</pre>
+                                <pre>POSITIVE_INFINITY  : Positive Infinity value.</pre>
+                            </div>
+
+                            <div>
+                                <p>Number of Methods : </p>
+                                <pre>toExponential()       : Converts a number to a exponential notation.</pre>
+                                <pre>toFixed()             : Formats a num with a specific number of decimals.</pre>
+                                <pre>toPrecisions()        : Formats a number with a specified length.</pre>
+                                <pre>toString()            : Converts a number to a string.</pre>
+                                <pre>valueOf()             : Returns the primitive value of a number.</pre>
+                            </div>
+
+                            <div>
+                                <p>Set Date :</p>
+                                <pre>setDate()        : Sets the day of the month(1-31).</pre>
+                                <pre>setFullYear()    : Sets the year (optionally month and day).</pre>
+                                <pre>setHours()       : Sets the hour (0-23).</pre>
+                                <pre>setMinutes()     : Sets the minutes (0-59).</pre>
+                                <pre>setMonth()       : Sets the month (0-11).</pre>
+                                <pre>setSeconds()     : Sets the seconds (0-59).</pre>
+                                <pre>setTime()        : Sets the time in milliseconds since Jan 1, 1970</pre>
+                                <pre>setUTCDate()     : Sets the day of the month in UTC.</pre>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <p>Getting Date : </p>
+                                <pre>Date()              : Creates a date object with the current date and time.</pre>
+                                <pre>Date("YYY-MM-DD")   : Creates a date object from a string.</pre>
+                                <pre>getDate()           : Returns day of the month (1-31).</pre>
+                                <pre>getDay()            : Returns the weekday (0-6).</pre>
+                                <pre>getFullYear()       : Returns the year (YYYY).</pre>
+                                <pre>getHours()          : Returns the hour (0-23).</pre>
+                                <pre>getMilliseconds()   : Returns the millisecond (0-999).</pre>
+                                <pre>getMinutes()        : Returns the minute (0-59).</pre>
+                                <pre>getMonth()          : Returns the month (0-11).</pre>
+                                <pre>getSeconds()        : Returns the second (0-59).</pre>
+                                <pre>getTime()           : Returns milliseconds since 1970.</pre>
+                                <pre>getUTCDate()        : Returns the day in UTC.</pre>
+                                <pre>parse()             : Parses a date string, returns millisec since 1970.</pre>
+                            </div>
+
+                            <div>
+                                <p>Error Handling :</p>
+                                <pre>try...catch            : Used to handle errors in code.</pre>
+                                <pre>throw                  : Throws a custom error.</pre>
+                                <pre>Error object           : Represents an error in JavaScript.</pre>
+                                <pre>try...catch...finally  : Handles errors and execute cleanup code.</pre>
+                                <pre>
+try {
+
+   //Code that may threw an error
+   let result = 10 / 0; // This will throw a division by zero error
+   console.log(result); // This line won't be executed
+
+} catch (error){
+
+    // Catch and handle the error
+    console.log("An error occured:", error.message);
+
+} finally {
+
+    //Optiional cleanup code
+    console.log("Cleanup code executed");
+}
+
+                                </pre>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <p>Mouse Events : </p>
+                                <pre>onclick, oncontextmenu, ondblclick, onmousedown,
+onmouseenter, onmouseleave, onmousemove,
+onmouseover, onmouseout, onmouseup</pre>
+                            </div>
+
+                            <div>
+                                <p>Keyboard Events :</p>
+                                <pre>onkeydown, onkeypress, onkeyup</pre>
+                            </div>
+
+                            <div>
+                                <p>Frame Events :</p>
+                                <pre>onabort, onbeforeunload, onerror, onhaschange,
+onload, onpageshow, onpagehide, onresize,
+onscroll, onunload
+                                </pre>
+                            </div>
+
+                            <div>
+                                <p>Form Events : </p>
+                                <pre>onblur, onchange, onfocus, onfocusin, onfocusout,
+oninput, oninvalid, onreset, onresearch,
+onselect, onsubmit
+                                </pre>
+                            </div>
+
+                            <div>
+                                <p>Drag Events : </p>
+                                <pre>ondrag, ondragend, ondragenter, ondragleave
+ondragover, ondragstart, ondrop
+                                </pre>
+                            </div>
+
+                            <div>
+                                <p>Media Events : </p>
+                                <pre>onabort, oncanplay, oncanplaythrough, ondurationchange,
+onended, onerror, onloadeddata, onloadedmetadata,
+omloadstart, onpause, onplay, onplaying, onprogress,
+onratechange, onseeked, onseeking, onstalled,
+onsuspend, ontimeupdate, onvolumechange, onwaiting
+                                </pre>
+                            </div>
+                        </div>
+
+
+</body>
+</html>

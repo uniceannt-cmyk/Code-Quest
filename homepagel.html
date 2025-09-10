@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=20" />
+  <link rel="stylesheet" href="code-quest-css/homepage1_styling.css" />
+  <title>CODE QUEST: ADVENTURE</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="back-face min-h-screen">
+  <div class="code-learn">
+    <nav class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between h-16 items-center">
+        <div class="flex items-center space-x-4">
+          <div class="flex items-center space-x-2">
+            <img src="images/codeqlogo.png" class="codequestpfp rounded-full h-8 w-8" />
+            <span class="pfp-name font-bold">CODE QUEST</span>
+          </div>
+        </div>
+        <div class="md:flex items-center space-x-8 hidden md:block">
+          <a href="#play" class="play-b hover:text-indigo-200">Play</a>
+          <a href="#progress" class="progress-b hover:text-indigo-200 ">My Progress</a>
+          <div class="flex items-center space-x-2">
+            <div class="bg-indigo-600 px-3 py-1 rounded-full text-sm">
+              <span id="xp-counter">0</span>XP
+            </div>
+            <a href="pfp.html">
+              <img id="set-pfp" src="default-avatar.png" alt="profile-pre" />
+            </a>
+          </div>
+        </div>
+        <button id="menu-button" class="md:hidden p-2 focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"></svg>
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="cda-learn">
+      <section class="bg-700 text-white py-12 text-center bg-code">
+        <div>
+          <div class="max-w-4xl mx-auto px-4">
+            <h1 class="codequestadventure font-bold mb-4">Code Quest Adventure</h1>
+            <p class="learn-code mb-6">Learn to Code through Fun Challenges and Interactive Quests</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 py-12">
+      <!-- Features Section -->
+      <section id="play" class="mb-10">
+        <h2 class="codingtoolkit font-bold mb-8 text-center toolkit">Your Coding Toolkit</h2>
+        <div class="flex flex-col md:flex-row gap-6 justify-center items-stretch">
+          
+          <!-- PSEUDO CODE GAME -->
+          <div class="pseudo">
+            <div class="flex-1 p-6 rounded-xl shadow-md pseudo-playground">
+              <div class="flex items-center mb-4">
+                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <h3 class="pseudop-title font-semibold">Pseudocode Playground</h3>
+              </div>
+              <p class="pseudop-info mb-4">Practice Converting Real-World Problem into Pseudocode with our Interactive Editor.</p>
+              <a href="pseudo_playground.html" class="text-blue-600 font-medium hover:underline">Play Now</a>
+            </div>
+          </div>
+
+          <!-- DEBUGGING GAME -->
+          <div class="debugging">
+            <div class="flex-1 p-6 rounded-xl shadow-md debugging-arena">
+              <div class="flex items-center mb-4">
+                <div class="bg-red-100 p-3 rounded-full mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                  </svg>
+                </div>
+                <h3 class="debugging-title font-semibold">Debugging Arena</h3>
+              </div>
+              <p class="debugging-info mb-4">Test your Skills by Finding and Fixing in Real-World Code Examples.</p>
+              <a href="debugging.html" class="text-blue-600 font-medium hover:underline">Enter the Arena</a>
+            </div>
+          </div>
+
+          <!-- MINI QUESTS -->
+          <div class="mini-quests">
+            <div class="flex-1 p-6 rounded-xl shadow-md miniquest">
+              <div class="flex items-center mb-4">
+                <div class="bg-green-100 p-3 rounded-full mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                  </svg>
+                </div>
+                <h3 class="miniquest-title font-semibold">Mini-Quests</h3>
+              </div>
+              <p class="miniquest-info mb-4">Short, scenario-based missions to reinforce programming concepts.</p>
+              <a href="miniquests.html" class="text-blue-600 font-medium hover:underline">Start a quest</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Progress Tracking -->
+      <section id="progress" class="mb-16 journey">
+        <h2 class="text-3xl font-bold mb-6 coding-journey ">Your Coding Journey</h2>
+        <div class="rounded-xl shadow-md p-6 journey-background">
+          <div class="mb-8">
+            <div class="total-p flex justify-between mb-2 ">
+              <span class="font-medium">Total Progress</span>
+              <span class="font-semibold">35%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-4">
+              <div class="bg-indigo-600 h-4 rounded-full progress-bar" style="width: 35%"></div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+
+              <!-- Debugging Progress  -->
+              <div class="debug">
+                <div class="rounded-xl shadow-md debugging-skills transition">
+                  <div class="border border-gray-200 rounded-lg p-4 hover:border-red-500 border border-transparent ">
+                    <div class="flex items-center mb-3">
+                      <div class="bg-blue-100 p-2 rounded-full mr-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                        </svg>
+                      </div>
+                      <h3 class="debugging-skills-title font-semibold debugging">Debugging Skills</h3>
+                    </div>
+
+                    <!-- Debug Progress Bar -->
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                      <div id="debugProgressBar" class="bg-red-500 h-2 rounded-full" style="width: 0%"></div>
+                    </div>
+
+                    <!-- Quest and XP -->
+                    <div class="flex justify-between mt-2 text-sm text-600 ds-quest">
+                      <span id="debugQuests">0/3 quests completed</span>
+                      <span id="debugXP">0 XP</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+                           <!-- Loop Mastery Progress -->
+             <div class="loop">
+               <div class="rounded-xl shadow-md loop-mastery transition loop-skill">
+                  <div class="border border-gray-200 rounded-lg p-4 progress-card transition hover:border-green-500 border border-transparent">
+                      <div class="flex items-center mb-3">
+                          <div class="bg-green-100 p-2 rounded-full mr-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                              </svg>
+                          </div>
+                          <h3 class="loop-mastery-title font-semibold">Loop Mastery</h3>
+                      </div>
+
+                      <!--Loop Progress Bar-->
+
+                      <div class="w-full bg-gray-200 rounded-full h-2">
+                          <div id="loopProgressBar" class="bg-green-500 h-2 rounded-full" style="width: 0%"></div>
+                      </div>
+
+                      <!-- Quest and XP -->
+                      <div class="flex justify-between mt-2 text-sm text-600 ds-quest">
+                          <span id="loopQuests">0/3 quests completed</span>
+                          <span id="loopXP">0 XP</span>
+                      </div>
+                  </div>
+                  </div>
+             </div>
+                  <!-- Progress Card 3 -->
+                   <div class="rounded-xl shadow-md data-structures transition data-structs">
+                  <div class="border border-gray-200 rounded-lg p-4 progress-card transition hover:border-indigo-500 border border-transparent">
+                      <div class="flex items-center mb-3 " >
+                          <div class="bg-purple-100 p-2 rounded-full mr-3 ">
+                              <svg class="h-6 w-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 
+                                  1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+                              </svg>
+                          </div>
+                          <h3 class="data-structures-title font-semibold">Questeria</h3>
+                      </div>
+                      <div class="w-full bg-gray-200 rounded-full h-2">
+                          <div class="bg-purple-500 h-2 rounded-full" style="width: 25%"></div>
+                      </div>
+                      <div class="flex justify-between mt-2 text-sm text-600 ds-quest">
+                          <span>1/4 quests completed</span>
+                          <span>150 XP</span>
+                      </div>
+                  </div>
+              </div>
+              </div>
+                   </div>
+            </div>
+          </div>
+      </section>
+                       <!-- Knowledge Artifacts -->
+                <div class="artifacts-border">
+                  <h3 class="earned-arti text-lg font-semibold mb-4">Recently Earned Knowledge Artifacts</h3>
+                  <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                      <!-- Loop Cheet Sheet Artifacts -->
+                       <a href="cheat-sheets.html" class="loop-arti">
+                        <div class="rounded-lg p-4 flex flex-col items-center
+                           transition hover:border-yellow-500 border">
+                              <img src="images/scroll-icon.png" alt="Scroll Icon " class="h-16 w-16 mb-2 rounded-full">
+                                <span class="text-sm font-medium text-center">Cheat Sheet</span>
+                         </div>
+                       </a>
+                    <!-- Debugging Tips Artifacts -->
+                     <a href="debugging-tips.html" class="debug-arti">
+                    <div class="rounded-lg p-4 flex flex-col items-center 
+                    transition hover:border-red-500 border">
+                      <img src="images/parchment-icon.png" alt="Parchment Icon" class="h-16 w-16 mb-2 rounded-full">
+                      <span class="text-sm font-medium text-center">Debugging Tips</span>
+                    </div>
+                    </a>
+                      <!-- Function Guide Artifacts -->
+                      <div class=" function-arti  bg-gray-100 border border-gray-200 rounded-lg p-4 flex flex-col items-center opacity-50 progress-card transition hover:border-indigo-500 border border-transparent">
+                          <img src="images/ancient-code.png" alt="Ancient Code Tablet" class="h-16 w-16 mb-2 grayscale rounded-full">
+                              <span class="text-sm font-medium text-center">???</span>
+                      </div>
+                     
+                     
+                     
+                      <!--Unknown Artifacts -->
+                      <div class=" treasures-arti  bg-gray-100 border border-gray-200 rounded-lg p-4 flex flex-col items-center opacity-50 progress-card transition hover:border-indigo-500 border border-transparent">
+                          <img src="images/chest-icon.png" alt="Locked treasure"  class="h-16 w-16 mb-2 grayscale rounded-full">
+                          <span class="text-sm font-medium text-center">???</span>
+                      </div>
+                  </div>
+              </div>
+          </div>  
+    </main>
+  </div>
+  <script src="code-quest-js/homepagel.js"></script>
+</body>
+</html>

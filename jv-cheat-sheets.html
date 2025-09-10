@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+    <hed>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale= 1.0"/>
+        <link rel="stylesheet" href="code-quest-css/jv-cheat-sheets.css">
+    </hed>
+    <body>
+<main>
+        <h1>Java Cheat Sheet</h1>
+        <div class="cheat-sheetw">
+            <div>
+                <div><p>1. Basic Structure</p></div>
+                <div class="desc-sheet">
+                    <pre>public class Main {
+    public static void main (String[ args]){
+        System.out.println("Hello, Java!");
+    }
+}</pre> </div>
+              <div class="desc-sheet">    <pre>Comments :
+//Single Line
+/*Multi-line*/
+                    </pre>
+                    </div>  
+                
+            </div>
+
+            <div>
+                <div><p>2. Data Types & Variables</p></div>
+                
+                <div class="desc-sheet">
+                <pre>
+int age = 25;
+double price = 99.99;
+char grade = 'A';
+boolean isJavaFun = true;
+String name = "Nixie";
+                </pre> </div>  
+
+               <div class="desc-sheet"><pre>
+Constants :
+final int MAX = 100;
+                </pre>
+                </div> 
+
+            </div>
+
+            <div>
+                <div><p>3. Operators & Control Flow</p></div>
+                <div class="desc-sheet">
+                    <pre>Aritmethic : + - * / %
+int a = 5, b = 2;
+int sum = a + b; </pre></div>
+
+
+<div class="desc-sheet"><pre>Comparison: == != > < >= <=
+Logical : && || !</pre></div>
+
+
+<div class="desc-sheet">
+    <pre>
+if-else :
+if (a > b){
+    System.out.println("A is greater");
+} else {
+    System.out.println("B is greater");
+}               
+    </pre>
+</div>
+
+<div class="desc-sheet"> 
+    <pre>Switch : 
+switch(day){
+    case 1: System.out.println("Monday"); 
+    break;
+    default: System.out.println("Other");
+}</pre>
+</div>
+
+            
+            </div>
+
+            <div>
+                <div><p>4. Loops</p></div>
+                <div class="desc-sheet">
+                    <pre>
+for (int i = 0; i < 5; i++){}
+while (a < 10) { a++; }
+do {b--;} while (b > 0);
+//break & continue
+                    </pre>
+                </div>
+            </div>
+
+            <div>
+                <div><p>5. Methods</p></div>
+                <div class="desc-sheet">
+                    <pre>
+public static int add(int x, int y){
+    return x + y;
+}
+                    </pre>
+                </div>
+            </div>
+
+            <div>
+                <div><p>6. Arrays</p></div>
+                <div class="desc-sheet">
+                    <pre>
+int[] nums = {1, 2, 3};
+System.out.println(nums[0]);
+
+for (int n : nums){
+    System.out.println(n);
+}
+
+Multi-dimensional
+in[][] grid = {{1, 2}, {3, 4}};
+                    </pre>
+                </div>
+            </div>
+
+            <div>
+                <div><p>7. Object-Oriented Concepts</p></div>
+                <div class="desc-sheet">
+                    <pre>
+class Car{
+    String model;
+    Car(String model) {
+        this.model = model;
+    }
+    void drive() {
+        System.out.println("Driving" + model);
+    }
+}
+
+Car c = new Car("Telsa");
+c.drive();
+                    </pre>
+                </div>
+            </div>
+
+            <div>
+                <div><p>8. Inheratance & Polymorphism</p></div>
+               <div class="desc-sheet"> <pre>
+class Animal {
+    void sound() {
+        System.out.println("Some sound");
+    }
+}
+</pre>
+</div>
+
+<div class="desc-sheet"><pre>
+class Dog extends Animal {
+    void sound() {
+        System.out.println("Bark");
+    }
+}</pre></div>
+                
+                
+            </div>
+
+            <div>
+                <div><p>9. Abstraction & Interfaces</p></div>
+             <div class="desc-sheet">  <pre>
+abstract class Shape {
+    abstract void draw();
+}
+
+class Circle extends Shape {
+    void draw () {
+        System.out.println("Drawing Circle");
+    }
+}  </pre></div> 
+
+<div class="desc-sheet"> <pre>
+interface Flyable {
+    void fly ();
+}
+
+class Bird implements Flyable {
+    public void fly() {
+        System.out.println("Flying");
+    }
+} </pre>
+           </div>    
+                
+            </div>
+            <div>
+                <div><p>10. Strings & Useful Methods</p></div>
+                <div class="desc-sheet">
+                    <pre>
+String s = "Java";
+s.length();           //4
+s.toUpperCase();      //JAVA
+s.contains("va");     //true
+s.chartAt(1);         //a
+s.equals("Java");     //true
+                    </pre>
+                </div>
+            </div>
+
+            <div>
+                <div><p>11. Collections</p></div>
+                <div class="desc-sheet">
+                    <pre>import java.util.*;
+List&lt;String&gt; list = new ArrayList<>();
+list.add("Java");
+
+Set&lt;Integer&gt; set = new HashSet<>();
+Map&lt;String, Integer&gt; map = new HashMap<>();
+
+for (String item : list) {
+    System.out.println(item);
+}
+                    </pre>
+                </div>
+            </div>
+
+            <div>
+                <div><p>12. Exception Handling</p></div>
+                <div class="desc-sheet">
+                    <pre>
+try {
+    int result = 10 / 0;     
+} catch (ArithmeticException e){
+    System.out.println("Cannot divide by zero");
+} finally {
+    System.out.println("Done");
+}
+                    </pre>
+                </div>
+            </div>
+            <div>
+                <div><p>13. Multithreadinig</p></div>
+                <div class="desc-sheet">
+                    <pre>
+class MyThread extends Thread {
+    public void run() {
+        System.out.println("Running thread...");
+    }
+}
+
+MyThread t1 = new MyThread ();
+t1.start();
+                    </pre>
+                </div>
+            </div>
+
+            <div>
+                <div><p>14. File Handling</p></div>
+                <div class="desc-sheet">
+                    <pre>
+import java.io.*;
+
+File file = new File("data.txt");
+
+try (BufferedReader br = new BufferedReader(new FileReader(file))) {
+    String line;
+    while ((line = bre.readLine()) != null){
+        System.out.println(line);
+    }
+} catch (IOException e) {
+    e.printStackTrace();
+}
+                    </pre>
+                </div>
+            </div>
+
+            <div>
+                <div><p>15. Packages & Access Modifiers</p></div>
+                <div class="desc-sheet">
+                    <pre>package myapp;
+
+public class MyClass {}       //public
+private int x;                //private
+protected int y;              //protected
+int z;                        //default
+                    </pre>
+                </div>
+            </div>
+        </div>
+</main>
+    </body>
+</html>

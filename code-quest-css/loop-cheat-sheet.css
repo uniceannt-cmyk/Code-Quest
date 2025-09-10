@@ -1,0 +1,113 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f4f8;
+  padding: 20px;
+  color: #333;
+}
+
+.glow-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 2.5em;
+  text-shadow: 0 0 5px #f0ad56, 0 0 10px #f4a53d, 0 0 20px #b27526, 0 0 40px rgb(178, 117, 12);
+}
+h4 {
+  margin-top: 0px;
+}
+
+.cheatsheet{
+   background-color: #fdf6e3;
+}
+.content-box {
+  background-color: #fdf6e3; 
+  padding: 30px 20px;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  border: 2px solid #d2b48c;
+  font-family: 'Georgia', serif;
+  overflow-y: auto;
+  max-height: 400px;
+}
+.content-box1,
+.content-box2,
+.content-box3 {
+  background-color: #fdf6e3;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  min-width: 280px;
+  margin: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border: 2px solid #d2b48c;
+  font-family: 'Georgia', serif;
+  margin-bottom: 10px;
+  display: inline-block;
+  width: 100%;
+  flex: 1 1 300px;
+  box-sizing: border-box;
+}
+
+.js-text{
+  margin-left: 10px;
+  padding-top: 30px;
+}
+.js-sec{
+  background-color: rgb(2, 2, 37) ;
+  color: white;
+  border-radius: 5px;
+}
+
+.jsloop-para,
+.jswhileloop-para{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+pre.jsloop-para,
+pre.jswhileloop-para {
+  font-family: 'Courier New', monospace;
+  background-color: #1e1e2f;
+  color: #fff;
+  padding: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 1em;
+  white-space: pre-wrap;
+}
+
+.jswhileloop-sec,
+.jsdowhile-sec,
+.jsloop-sec{
+  background-color: rgb(2, 2, 37) ;
+  color: white;
+  border-radius: 5px; 
+  height: 150px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+pre.jsdowhile-para{
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #1e1e2f;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px;
+  padding-bottom: 10px;
+  font-size: 1em;
+  white-space: pre-wrap;
+}
+
+.box-row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}

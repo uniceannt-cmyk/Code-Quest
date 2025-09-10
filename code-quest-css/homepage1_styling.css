@@ -1,0 +1,266 @@
+
+.pseudo,
+.debugging{
+    margin-bottom: 10px;
+}
+
+.pseudop-title{
+    color: rgb(152, 164, 255);
+}
+
+.debugging-title{
+    color: rgba(255, 0, 76, 0.939);
+}
+
+.miniquest-title{
+    color: greenyellow;
+}
+
+.pseudop-info,
+.debugging-info,
+.miniquest-info{
+    color: white;
+}
+
+.pseudo-playground {
+
+    background-color: rgba(0, 234, 255, 0.2);
+    border: 1px solid rgba(0, 234, 255, 0.5);
+    transition: box-shadow 0.3s ease;
+    width: 100%;
+}
+
+.pseudo-playground:hover{
+    animation: pulseGlowpseudo 1.5s infinite ease-in-out;
+}
+
+@keyframes pulseGlowpseudo{
+      0% {
+    box-shadow: 0 0 5px 2px rgb(0, 234, 255);
+    transform: scale(1);
+ }
+      50% {
+    box-shadow: 0 0 20px 10px rgb(11, 154, 167);
+    transform: scale(1.05);
+  }
+     100% {
+    box-shadow: 0 0 5px 2px rgb(8, 113, 122);
+    transform: scale(1);
+  }
+}
+
+.debugging-arena {
+    background-color: rgba(255, 0, 0, 0.2);
+    border: 1px solid rgba(255, 0, 76, 0.5);
+    transition: box-shadow 0.3s ease;
+    width: 100%;
+}
+
+.debugging-arena:hover {
+  animation: pulseGlowdebug 1.5s infinite ease-in-out;
+}
+
+@keyframes pulseGlowdebug {
+  0% {
+    box-shadow: 0 0 5px 2px rgb(255, 0, 0);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 20px 10px rgb(157, 0, 0);
+    transform: scale(1.05);
+  }
+  100% {
+    box-shadow: 0 0 5px 2px rgb(54, 2, 2);
+    transform: scale(1);
+  }
+}
+
+.miniquest {
+  background-color: rgba(32, 247, 46, 0.2);
+  border: 1px solid rgba(60, 244, 31, 0.5);
+  width: 100%;
+}
+
+.miniquest:hover{
+    animation: pulseGlowquests 1.5s infinite ease-in-out;
+}
+
+@keyframes pulseGlowquests{
+
+ 0% {
+   box-shadow: 0 0 5px 2px  rgb(32, 247, 46);
+   transform: scale(1);
+ }
+ 50% {
+   box-shadow: 0 0 20px 10px  rgb(19, 157, 28);
+   transform: scale(1.05);
+ }
+ 100% {
+   box-shadow: 0 0 5px 2px  rgb(9, 104, 16);
+   transform: scale(1);
+ }
+
+}
+
+
+
+
+.back-face,
+.code-learn {
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 100%);
+}
+
+.pfp-name {
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #00fff7, #0928ee, #00c6ff, #23e0f9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% auto;
+    animation: gradientMove 3s ease infinite, glowPulse 2s ease-in-out infinite;
+    text-shadow: 0 0 8px #00b7ff, 0 0 12px #09b9ee, 0 0 16px #00c6ff;
+}
+
+.cda-learn{
+    border: 1px solid #00f5d4;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 0 15px rgba(0,245,212,0.3);
+    margin: auto;
+    background: rgba(0, 234, 255, 0.2);
+    border: 1px solid rgba(0, 234, 255, 0.5);
+    border-radius: 10px;
+    height:150px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.codequestadventure {
+  font-size: 30px;
+  color: #0dd7e6;
+  text-shadow: 0 0 6px rgba(0, 245, 212, 0.4);
+  font-weight: bold;
+}
+
+.codingtoolkit{
+    font-size: 35px;
+    font-weight: bold;
+    color: #00f5d4;
+    text-align: center;
+
+    text-shadow: 0 0 6px #00f5d4, 0 0 12px #00f5d4, 0 0 18px #00f5d4;
+
+}
+
+.toolkit,
+.coding-journey{
+    color: white;
+    text-align: center;
+}
+.journey-background{
+    background: linear-gradient(145deg, #012d6b, #3a6073); /* steel-blue mix */
+}
+
+.debug,
+.loop-skill,
+.data-structs{
+    margin-top: 10px;
+}
+.debugging-skills{
+    background: linear-gradient(145deg, #ff1e1e, #660000);
+}
+
+.loop-mastery{
+    background: linear-gradient(145deg, #11998e, #38ef7d);
+}
+
+.data-structures{
+    background: linear-gradient(145deg, #6a11cb, #2575fc);
+}
+
+.ds-quest{
+    color: white;
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.debug-arti{
+    background-color: #fde3e3;
+    border: 2px solid #ce8989; 
+    border-radius: 10px;
+ 
+}
+
+.function-arti{
+}
+
+.treasures-arti{
+}
+
+.loop-arti{
+    background-color: #f0f4f8;
+    border-radius: 10px;
+    border: 2px solid  #f0ad56;
+}
+
+.debug-arti:hover,
+.loop-arti:hover{
+    animation: pulse 1.5s infinite;
+}
+
+#set-pfp {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 8px #00f2ff;
+  transition: transform 0.3s ease;
+}
+
+#set-pfp:hover {
+  transform: scale(1.05);
+}
+
+
+.play-b,
+.progress-b{
+    color: white;
+}
+
+.total-p{
+    color: white;
+}
+
+.debugging-skills-title,
+.loop-mastery-title,
+.data-structures-title{
+    color: white;
+}
+
+.artifacts-border{
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 30px;
+    
+      background: linear-gradient(145deg, #012d6b, #3a6073);
+      border-radius: 8px;
+      padding: 20px;
+      margin: 0 25px;
+      box-sizing: border-box;  
+      margin-bottom: 30px;
+      margin-left: 30px;
+      margin-right: 30px;
+}
+
+.earned-arti{
+    color: white;
+    margin-left: 15px;
+    padding-top: 10px;
+}

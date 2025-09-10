@@ -1,0 +1,110 @@
+body{
+    background-color: #fde3e3;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 2.5em;
+    text-shadow: 0 0 5px #f40b0b, 0 0 10px #c51c1c, 0 0 20px #b22626, 0 0 40px rgb(178, 12, 12);;
+}
+.debug-box,
+.debug-box1,
+.debug-box2,
+.debug-box3,
+.debug-box4,
+.debug-box5,
+.debug-box6,
+.debug-box7{
+  background-color: #fde3e3; 
+  border: 2px solid #d28c8c; 
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Georgia', serif;
+  color: #333;
+}
+
+.jsdebug-sect{
+    background-color: rgb(2, 2, 37) ;
+    color: white;
+    border-radius: 5px;
+}
+
+.js-text{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.jscode-sect{
+    background-color: rgb(2, 2, 37) ;
+    color: white;
+    border-radius: 5px; 
+    height: 100px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.debug-info{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #1e1e2f;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+    padding-bottom: 10px;
+    font-size: 1em;
+    white-space: pre-wrap;
+}
+
+#emoji-left,
+#emoji-right {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1; /* 👈 lower than main content */
+}
+
+#emoji-left {
+  left: 0;
+}
+
+#emoji-right {
+  right: 0;
+}
+
+.floating-emoji {
+  position: absolute;
+  bottom: 0;
+  font-size: 2em;
+  animation: floatUp 3s linear forwards;
+  opacity: 0.8;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
+
+#main-content {
+  position: relative;
+  z-index: 10; /* 👈 higher than emoji containers */
+}
+
+.box-row {
+  position: relative;
+  z-index: 10;
+}

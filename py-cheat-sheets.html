@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0"/>
+    <link href="code-quest-css/py-cheat-sheets.css" rel="stylesheet">
+    <title>CHEAT SHEET</title>
+</head>
+<body>
+    <h1>PYTHON CHEAT SHEET</h1>
+
+    <div class="container">
+        <div class="cheatsheet-box">
+            <div class="title1"> 1. Basic Operations</div>
+                <div class="cheetsheet-content1">
+                  <li>Print to console: <span>print("Hello, World!")</span> </li>
+                  <li>Get user input: <span>name = input("Enter your name: ")</span> </li>
+                  <li>String concatention: <span>full_name = first_name + " " + last_name </span> </li>
+                  <li>String formatting (f-string): <span>print (f"Hello, {name}!")</span></li>
+                  <li>String formatting (.format): <span> print ("Hello, {}!".format(name))</span></li>
+                  <li>String formatting (%):<span>print("Hello, %s!" % name)</span> </li>
+                  <li>Type conversion (to int): <span>age = int("25")</span></li>
+                  <li>Type conversion (to float):<span> price = float("19.99")</span></li>
+                  <li>Type conversion (to string): <span>age_str = str(25)</span></li>
+                  <li>Check type: <span>type(variable)</span></li>
+                  <li>Get length: <span>len(sequence)</span></li>
+                  <li>Get memory address: <span> id(object)</span></li>
+                  <li>Delete variable: <span>del variable_name</span></li>
+                  <li>Check if object is instance of class: <span>isintance(object, class)</span> </li>
+                  <li>Get all attributes of an object:<span>dir(object)</span></li>
+                </div> 
+        </div>
+        <div class="cheatsheet-box2">
+            <div class="title2">2. Numbers and Width</div>
+                <div class="cheetsheet-content2" >
+                    <li>Addition: <span>result = 5 + 3</span></li>
+                    <li>Subtraction: <span>result = 10 - 4</span></li>
+                    <li>Multiplication: <span>result = 6 * 7</span></li>
+                    <li>Division: <span>result = 15 / 3</span></li>
+                    <li>Integer Division: <span> result = 17 // 3</span></li>
+                    <li>Modulus: <span>remainder = 17 % 3</span></li>
+                    <li>Exponentiation: <span>result = 2 ** 3</span> </li>
+                    <li>Absolute Value: <span>abs(-5)</span></li>
+                    <li>Round Number: <span>round(3.7)</span> </li>
+                    <li>Round to specific decimal places: <span>round(3.14159,2)</span></li>
+                    <li>Floor Division: <span>import math; math.floor(5.7)</span></li>
+                    <li>Ceiling Division: <span> import math; math.ceil(5.2)</span></li>
+                    <li>Square Root: <span>import math; math.sqrt(16)</span></li>
+                    <li>Calculate pi:<span>import math; math.pi</span></li>
+                    <li>Calculate e: <span>import math; math.e</span></li>
+                    <li>Logarithm (base e): <span>import math; math.log(10)</span></li>
+                    <li>Logarithm (base 10): <span>import math; math.log10(100)</span></li>
+                    <li>Cosine: <span> math; math.cos(math.pi)</span></li>
+                    <li>Tangent:<span></span> import math; math.tan(math.pi/4)</li>
+                    <li>Degrees to Radians: <span></span> import math; math.radians(180)</li>
+                    <li>Radians to Degrees: <span></span> import math; math.degrees(math.pi)</li>
+                    <li>Generate Random Number:  <span></span>import random; random.random() </li>
+                    <li>Generate Random Integer: <span></span> import random; random.randint(1, 10)</li>
+                    <li>Choose Random Element: <span></span> import random; random.choice([1, 2, 3, 4, 5])</li>
+                </div>
+      </div>
+
+
+      <div class="cheatsheet-box3">
+            <div class="title3">3. Strings</div>
+                <div class="cheetsheet-content3">
+                    <li>Create String: <span>s = "Hello, World!"</span></li>
+                    <li>Multiline String:<span> s = """This is a multiline string"""</span></li>
+                    <li>Raw String: <span>s = r"C:\Users\John"</span></li>
+                    <li>String Repetition: <span>"Hello" * 3</span></li>
+                    <li>String Indexing: <span>first_char = s[0]</span> </li>
+                    <li>String Slicing: <span>substring = s[1:5]</span> </li>
+                    <li>Reverse String: <span> reversed_string = s[::-1]</span></li>
+                    <li>Convert to Uppercase: <span> s.upper()</span></li>
+                    <li>Convert to Lowercase: <span>s.lower()</span> </li>
+                    <li>Capitalized String: <span>s.capitalize()</span> </li>
+                    <li>Title Case: <span> s.title()</span></li>
+                    <li>Swap Case: <span> s.swapcase()</span></li>
+                    <li>Strip Whitespace: <span>s.strip()</span> </li>
+                    <li>Left Strip: <span>s.lstrip()</span></li>
+                    <li>Right Strip: <span>s.rstrip()</span></li>
+                    <li>Replace Substring:<span>s.replace("old", "new")</span></li>
+                    <li>Split String:<span> parts = s.split(",")</span> </li>
+                    <li>Join Strings: <span>",".join(["a", "b", "c"])</span></li>
+                    <li>Check if String starts with: <span>s.startswith("Hello")</span> </li>
+                    <li>Check if string ends with: <span>s.endswith("World!")</span></li>
+                    <li>Find Substring: <span>index = s.find("World")</span> </li>
+                    <li>Count Occurences: <span>count = s.count("1")</span> </li>
+                    <li>Check if String is Aplhanumeric: <span>s.isalnum()</span></li>
+                    <li>Check if String is Alphabetic: <span>s.isalpha()</span> </li>
+                    <li>Check if String is Digit: <span>s.isdigit()</span></li>
+                    <li>Check if String is Uppercase: <span>s.isupper()</span> </li>
+                    <li>Check if String is Title Case: <span>s.istitle()</span> </li>
+                    <li>Check if String is Whitespace: <span>s.isspace()</span></li>
+                </div>
+      </div>
+
+      <div class="cheatsheet-box4">
+        <div class="title4">4. Lists</div>
+        <div class="cheetsheet-content4">
+            <li>Create List: <span>lst = [1, 2, 3, 4, 5]</span></li>
+            <li>Create List with Range: <span> lst = list(range(1, 6))</span></li>
+            <li>Access Element: <span> element = lst[0]</span></li>
+            <li>Slice List: <span>subset = lst[1:4]</span></li>
+            <li>Append to List: <span>lst.append(6)</span></li>
+            <li>Extend List: <span>lst.extend([7, 8, 9])</span></li>
+            <li>Insert at Index: <span>lst.insert(0, 0)</span></li>
+            <li>Remove by Value: <span>lst.remove(3)</span></li>
+            <li>Remove by Index: <span>lst.pop(2)</span></li>
+            <li>Clear List: <span>lst.clear()</span></li>
+            <li>Index of Element: <span>index = lst.index(4)</span></li>
+            <li>Count Occurrences: <span>count = lst.count(2)</span></li>
+            <li>Sort List: <span>lst.sort()</span></li>
+            <li>Sort List in Reverse: <span>lst.sort(reverse=True)</span></li>
+            <li>Reverse List: <span>lst.reverse()</span></li>
+            <li>Copy List: <span>new_lst = lst.copy()</span></li>
+            <li>Shallow Copy: <span>import copy; new_lst = copy.copy(lst)</span></li>
+            <li>Deepy Copy: <span>import copy; new_lst = copy.deepcopy(lst)</span></li>
+            <li>List Comprehension: <span>squares = [x**2 for x in range(10)]</span></li>
+            <li>Filter with list Comprehension: <span>evens = [x for x in range(10) if x % 2 == 0]</span></li>
+            <li>Nested List Comprehension: <span>matrix = [[i**j for j in range(5)] for i in range(5)]</span></li>
+            <li>Flatten Nested List: <span>flattened = [item for sublist in nested_list for item in sublist]</span></li>
+            <li>Zip Lists: <span>zipped = list(zip(list1, list2))</span></li>
+            <li>Unzip Lists: <span>unzipped = list(zip(*zipped))</span> </li>
+            <li>Check if Element in list: <span>5 in lst</span> </li>
+            <li>Get Max Value: <span>max(lst)</span></li>
+            <li>Get Min Value: <span>min(lst)</span></li>
+            <li>Sum of List: <span>sum(lst)</span></li>
+            <li>Join List of Strings:<span> " ".join(lst)</span></li>
+            <li>Create list of lists: <span>matrix = [[0 for _ in range(5)] for _ in range(5)]</span></li>
+        </div>
+      </div>
+
+      <div class="cheatsheet-box5">
+        <div class="title5">5. Tuples</div>
+        <div class="cheetsheet-content5">
+            <li>Create Tuple with Single Element: <span>t = (1,)</span></li>
+            <li>Access Element: <span> element = t[0]</span></li>
+            <li>Slice Tuple: <span>subset = t[1:3]</span> </li>
+            <li>Concatenate Tuples: <span>new_t = t + (4, 5, 6)</span> </li>
+            <li>Repeat Tuple: <span> repeated_t = t * 3</span></li>
+            <li>Count Occurences: <span>count = t.count(2)</span></li>
+            <li>Index of Element: <span>index = t.index(3)</span></li>
+            <li>Check if Element in Tuple: <span>2 in t</span></li>
+            <li>Unpack Tuple: <span>a, b, c = t</span></li>
+            <li>Swap Values using Tuple: <span>a, b = b, a</span></li>
+            <li>Convert List to Tuple: <span> t = tuple([1, 2, 3])</span></li>
+            <li>Convert Tuple to List: <span>lst = lst(t)</span></li>
+            <li>Create Tuple of Tuples: <span>matrix = ((1, 2, 3,), (4, 5, 6), (7, 8, 9))</span> </li>
+            <li>Named Tuple: <span>from collections import namedtuple; Point = namedtuple('Point', ['x', 'y']); p = Point(1, 2)</span> </li>
+        </div>
+      </div>
+
+      <div class="cheatsheet-box6">
+        <div class="title6">6. Sets</div>
+        <div class="cheetsheet-content6">
+            <li>Create  Set: <span>s = {1, 2, 3}</span></li>
+            <li>Create Set from List: <span>s = set ([1, 2, 3, 3, 2, 1])</span> </li>
+            <li>Add Element: <span>s.add(4)</span> </li>
+            <li>Update Set: <span>s.update([4, 5, 6])</span> </li>
+            <li>Remove Element: <span>s.remove(2)</span> </li>
+            <li>Remove Element if Present: <span>s.discard(5)</span></li>
+            <li>Pop Random Element: <span>element = s.pop()</span> </li>
+            <li>Clear Set: <span>s.clear()</span> </li>
+            <li>Union of Sets: <span>union = s1 | s2</span> </li>
+            <li>Intersection of Sets: <span>intersection = s1 & s2</span></li>
+            <li>Difference of Sets: <span>difference = s1 - s2</span></li>
+            <li>Symmetric Difference: <span>sym_diff = s1 ^ s2</span> </li>
+            <li>Check if Subset: <span>is_subset = s1.issubset(s2)</span></li>
+            <li>Check if Superset: <span>is_superset = s1.issuperset(s2)</span> </li>
+            <li>Check if disjoint: <span>is_disjoint = s1.isdisjoint(s2)</span> </li>
+            <li>Frozen Set (immutabkle): <span>fs = frozenset([1, 2, 3])</span></li>
+        </div>
+      </div>
+
+      <div class="cheatsheet-box7">
+        <div class="title7">7. Dictionaries</div>
+        <div class="cheetsheet-content7">
+            <li>Create Dictionary: <span>d = {"key": "value"}</span> </li>
+            <li>Create Dictionary with Dict(): <span>d = dict(key="value")</span></li>
+            <li>Access Value with Default: <span>value = d.get("key", "default")</span> </li>
+            <li>Add/Update Key-Value Pair: <span>d["new_key"] = "new_value"</span></li>
+            <li>Update Dictionary: <span>d.update({"key1": "value1", "key2": "value2"})</span></li>
+            <li>Remove Key-Value Pair: <span>del d["key"]</span></li>
+            <li>Remove and return Value: <span>value d.pop("key")</span> </li>
+            <li>Remove and return Last Item: <span>item d.popitem()</span> </li>
+            <li>Get Keys: <span>keys d.keys()</span></li>
+            <li>Get Values: <span>values=d.values()</span> </li>
+            <li>Get Key-Value Pairs: <span>items d.items()</span> </li>
+            <li>Clear Dictionary: <span>d.clear()</span></li>
+            <li>Copy Dictionary:<span> new_dd.copy()</span> </li>
+            <li>Deep Copy Dictionary: <span>import copy; new_d copy.deepcopy(d)</span></li>
+            <li>Check if Key in Dictionary: <span>"key" in d</span> </li>
+            <li>Dictionary Comprehension: <span>squares {x: x**2 for x in range(5)}</span> </li>
+            <li>Merge Dictionaries (Python 3.5+): <span>merged {**dict1, **dict2}</span></li>
+            <li>Get Value of Nested Dictionary: <span>value d['outer_key']['inner_key]</span> </li>
+            <li>Default Dictionary: <span>from collections import defaultdict; dd = defaultdict(int)</span> </li>
+            <li>Ordered Dictionary: <span>from collections import OrderedDict; od = OrderedDict()</span></li>
+            <li>Counter Dictionary: <span>from collections import Counter; c = Counter (['a', 'b', 'c', 'a', 'b', 'a'])</span></li>
+        </div>
+      </div>
+
+      <div class="cheatsheet-box8">
+        <div class="title8">8. Control Flow</div>
+        <div class="cheetsheet-content8">
+            <li>If Statement: <span>if condition: do_something()</span></li>
+            <li>If-else Statement: <span>if condition: do_something() else: do_other_thing()</span></li>
+            <li>If-elif-else Statement: <span>if conditiont: do_something() elif condition2: do_other_thing() else: do_default()</span> </li>
+            <li>Ternary Operator: <span>result if condition else y</span></li>
+            <li>For Loop: <span>for item in iterable: do_something()</span></li>
+            <li>For Loop with Index: <span>for index, item in enumerate(iterable): do_something()</span> </li>
+            <li>For Loop with Range: <span>for i in range(5): do_something()</span> </li>
+            <li>While Loop: <span>while condition: do_something()</span></li>
+            <li>Break from Loop: <span>if condition: break</span> </li>
+            <li>Continue to next Iteration: <span>if condition: continue</span> </li>
+            <li>Else Clause in For Loop: <span>for item in iterable: do_something() else: no_break_occurred()</span></li>
+            <li>Pass Statement: <span>if condition: pass</span></li>
+            <li>Match-Case (Python 3.10+): <span> match value: case pattern: do something()</span></li>
+            <li>Loop over Multiple Lists: <span>for iteml, item2 in zip(list1, list2): do_something()</span></li>
+            <li>Nested Loops: <span>for i in range(3): for jin range(3): print(i, j)</span></li>
+            <li>List Comprehension with if: <span>[x for x in range(10) if x % 2 == 0]</span></li>
+            <li>Dictionary Comprehension with if: <span>{x: x**2 for x in range(5) if x % 2 0}</span></li>
+        </div>
+      </div>
+
+      <div class="cheatsheet-box9">
+        <div class="title9">9. Functions</div>
+        <div class="cheetsheet-content9">
+            <li>Define Function: <span>def func_name(param): return result</span></li>
+            <li>Function with Default Parameter: <span>def greet(name="World"): print(f"Hello, {name}!")</span> </li>
+            <li>Function with Multiple Parameters: <span>def func(param1, param2, param3):pass</span> </li>
+            <li>Function with Variable Arguments: <span>def sum_all(*args): return sum(args)</span></li>
+            <li>Function with Keyword Arguments: <span>def print_info(**kwargs): for k, v in kwargs.items(): print(f"{k}: {v}")</span> </li>
+            <li>Lambda Function: <span>square lambda x: x**2</span></li>
+            <li>Return Multiple Values: <span>def func(): return 1, 2, 3</span></li>
+            <li>Nested Function: <span> def outer(): def inner(): pass; return inner</span></li>
+            <li>Closure: <span>def outer(x): def inner(y): return x+y; return inner</span></li>
+            <li>Decorator: <span>def decorator (func): def wrapper(*args, **kwargs): return func(*args, **kwargs); return wrapper</span></li>
+            <li>Apply Decorator:<span>@decorator def function(): pass</span> </li>
+            <li>Partial Function: <span>from functools import partial; add_five = partial(add, 5)</span> </li>
+            <li>Recursive Function:<span>def factorial(n): return 1 if ne else n factorial(n-1)</span> </li>
+            <li>Generator Function: <span>def gen(): yield item</span></li>
+            <li>Asynchronous Function: <span>async def async_func(): await asyncio.sleep(1)</span></li>
+        </div>
+      </div>
+
+      <div class="cheatsheet-box10">
+        <div class="title10">10. Classes and Object-Oriented Programming</div>
+        <div class="cheetsheet-content10">
+            <li>Define Class: <span>class ClassName: pass</span> </li>
+            <li>Create Instance: <span>obj ClassName()</span></li>
+            <li>Define Constructor: <span>def init (self. param): self.param param</span></li>
+            <li>Define Method: <span>def method_name(self): pass</span> </li>
+            <li>Define Class Method: <span>@classmethod def class_method(cls): pass</span></li>
+            <li>Define Static Method: <span>@staticmethod def static_method(): pass</span></li>
+            <li>Inheritance: <span>class ChildClass (ParentClass): pass</span></li>
+            <li>Multiple Inheritance:<span>class ChildClass (Parent1, Parent2): pass</span> </li>
+            <li>Call Superclass method: <span>super().method_name()</span> </li>
+            <li>Property Decorator: <span>@property def prop_name(self): return self._prop</span></li>
+            <li>Setter Decorator: <span>@prop_name.setter def prop_name(self, value): self. prop value </span> </li>
+            <li>Abstract Base Class: <span>from abc import ABC, abstractmethod; class AbstractClass(ABC): @abstractmethod def abstract_method(self): pass</span> </li>
+            <li>Dataclass (Python 3.7+): <span>from dataclasses import dataclass; @dataclass class Point: x: float; y: float</span></li>
+            <li>Method Overriding: <span>def method_name(self): # Override parent method</span> </li>
+            <li>Private Attribute: <span>self.__private_attr = value</span> </li>
+            <li>Name Mangling: <span>obj._ClassName__private_attr</span></li>
+            <li>Duck Typing: <span>if hasattr(obj, 'method_name'); obj.method_name()</span></li>
+            <li>Context Manager Class: <span>class ContextManager: def __enter__(self): pass; def __exit__(self, exc_type, exc_value, traceback): pass</span></li>
+            <li>Metaclass: class Meta(type):<span>pass; class MyClass (metaclass=Meta): pass</span> </li>
+        </div>
+      </div>
+
+      <div class="cheatsheet-box11">
+        <div class="title11">11. Exceptions and Error Handling</div>
+        <div class="cheetsheet-content11">7
+            <li>Try-Except Block: <span>try: do something() except Exception as e: handle_error(e)</span></li>
+            <li>Try-Except-Else Block: <span>try: result do_something() except Exception: handle_error() else: use_result(result)</span>  </li>
+            <li>Try-Except-Finally Block: <span>try: do_something() except Exception: handle_error() finally: cleanup()</span> </li>
+            <li>Catch Multiple Exceptions: <span>try: do something() except (TypeError, ValueError) as e handle_error(e)</span></li>
+            <li>Raise Exception: <span>raise ValueError("Invalid input")</span></li>
+            <li>Raise from: <span>raise ValueError("Invalid input") from original error</span></li>
+            <li>Assert Statement: <span>assert condition, "Error message"</span></li>
+            <li>Custom Exception: <span>class CustomError (Exception): pass</span></li>
+            <li>Handle All Exceptions: <span>try: do something() except Exception as e: handle_any_error(e)</span></li>
+            <li>Exception Chaining: <span>try: do_something() except Exception as e: raise RuntimrError("Operation Failed") from e</span> </li>
+        </div>
+      </div>
+
+      <div class="cheatsheet-box12">
+        <div class="title12">12. File I/O and Context Managers</div>
+        <div class="cheetsheet-content12">
+            <li>Open File: <span>with open("file.txt", "r") as f: content f.read()</span></li>
+            <li>Write to File: <span>with open("file.txt", "w") as f: f.write("content")</span> </li>
+            <li>Append to File: <span>with open("file.txt", "a") as f: f.write("new content")</span></li>
+            <li>Read Lines from File: <span>with open("file.txt", "r") as f: lines = f.readlines()</span> </li>
+            <li>Write Lines to File: <span>with open("file.txt", "w") as f: f.writelines(lines)</span></li>
+            <li>Read File Line by Line: <span>with open("file.txt", "r") as f: for line in f: print(line)</span></li>
+            <li>Check if File exists: <span>import os; os.path.exists("file.txt")</span></li>
+            <li>Get File Size: <span>import os; os.path.getsize("file.txt")</span></li>
+            <li>Delete File: <span>import os; os.remove("file.txt")</span> </li>
+            <li>Rename File: <span>import os; os.rename("old_name.txt", "new_name.txt")</span></li>
+            <li>Create Directory: <span>import os; os.mkdir("new_directory")</span></li>
+            <li>Change Directory: <span> import os; os.chdir("path/to/directory")</span></li>
+            <li>Get Current Working Directory: <span>import os; cwd os.getcwd()</span></li>
+            <li>List Directory Contents: <span>import os; files os.listdir("directory")</span></li>
+            <li>Walk Directory Tree: <span>import os; for root, dirs, files in os.walk("directory"): print(root, dirs, files)</span></li>
+        </div>
+      </div>
+
+      <div class="cheatsheet-box13">
+        <div class="title13">13. Modules and Packages</div>
+        <div class="cheetsheet-content13">
+            <li>Import Module: <span>import module_name</span> </li>
+            <li>Import Specific Item: <span>from module_name import item_name</span></li>
+            <li>Import with Alias: <span>import module_name as alias</span> </li>
+            <li>Import All Items: <span>from module_name import *</span></li>
+            <li>Reload Module: <span>import importlib; importlib.reload(module_name)</span></li>
+            <li>Get Module Attributes: <span>dir(module_name)</span></li>
+            <li>Get Module Help: <span>help (module_name)</span></li>
+            <li>Create Package: <span># Create _init_.py in directory</span></li>
+            <li>Relative Import: <span>from module import item</span></li>
+            <li>Absolute Import: <span>from package.module import item</span></li>
+            <li>Import from Parent Directory: <span>from..module import item</span> </li>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>

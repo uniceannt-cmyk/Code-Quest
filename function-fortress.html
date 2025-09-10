@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Function Fortress</title>
+  <link rel="stylesheet" href="code-quest-css/funtion-fortress.css">
+</head>
+<body>
+
+<h1>🏰 Function Fortress</h1>
+<p>Defeat the bugs by completing missing parts of the function (<code>/* ??? */</code>).</p>
+
+<div class="info-bar">
+  <div>⭐ Score: <span id="score">0</span></div>
+  <div>🕒 Time: <span id="timer">0</span>s</div>
+</div>
+
+<div class="level-box">
+  <h2 id="levelTitle"></h2>
+  <pre id="codeBlock"></pre>
+  <textarea id="answer" placeholder="Type the missing code here..."></textarea><br>
+  <button onclick="checkAnswer()">Submit</button>
+  <button onclick="showHint()">Hint (-20 points)</button>
+  <button id="resetBtn" onclick="resetGame()">Reset Game</button>
+  <div id="result" class="message"></div>
+  <div id="hintBox" class="hint"></div>
+</div>
+<script src="code-quest-js/function-fortress.js"></script>
+</body>
+</html>

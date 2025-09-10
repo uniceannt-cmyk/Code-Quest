@@ -1,0 +1,156 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #f0f4f8;
+    line-height: 1.6;
+    padding: 25px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    user-select: text;
+}
+
+
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #ff6f00;
+    text-align: center;
+    margin-bottom: 40px;
+    text-shadow: 0 0 8px #ff6f00aa;
+    letter-spacing: 2px;
+}
+
+
+h3 {
+    font-size: 1.9rem;
+    color: #42a5f5; 
+    margin-top: 45px;
+    margin-bottom: 20px;
+    border-left: 6px solid #ff6f00;
+    padding-left: 12px;
+    text-shadow: 0 0 5px #42a5f5aa;
+}
+
+
+p {
+    font-size: 1.05rem;
+    margin-bottom: 18px;
+    color: #cfd8dc;
+}
+
+
+li {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+    color: #e0e0e0;
+    list-style-type: disc;
+    margin-left: 25px;
+}
+
+
+pre {
+    background: #121212;
+    color: #80cbc4; 
+    padding: 18px 22px;
+    border-radius: 10px;
+    font-family: 'Fira Code', Consolas, Monaco, 'Courier New', monospace;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin-bottom: 30px;
+    box-shadow: 0 0 15px #42a5f5aa inset;
+    overflow-x: auto;
+    border: 2px solid #42a5f5;
+}
+
+
+.cpp-c pre {
+    background: #0d1b2a;
+    color: #ffab40; 
+    box-shadow: 0 0 15px #ffab40aa inset;
+    border-color: #ffab40;
+}
+
+
+.cpp-t p {
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: #ff6f00;
+    margin-bottom: 10px;
+    text-shadow: 0 0 6px #ff6f00cc;
+}
+
+
+code {
+    background-color: #263238;
+    color: #ffab40;
+    padding: 3px 6px;
+    border-radius: 5px;
+    font-family: 'Fira Code', Consolas, Monaco, 'Courier New', monospace;
+    font-size: 0.95rem;
+}
+
+
+pre + p > pre {
+    background: #263238;
+    color: #81d4fa;
+    padding: 14px 20px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    margin-top: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 12px #42a5f5aa;
+}
+
+
+
+a {
+    color: #ffab40;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+pre::-webkit-scrollbar {
+    height: 8px;
+}
+
+pre::-webkit-scrollbar-track {
+    background: #1b2733;
+    border-radius: 10px;
+}
+
+pre::-webkit-scrollbar-thumb {
+    background: #42a5f5;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px 15px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    pre {
+        font-size: 0.85rem;
+    }
+}
+
+

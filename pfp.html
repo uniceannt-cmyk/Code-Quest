@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale= 1.0, maximum-scale=1, user-scalable=20">
+        <link rel="stylesheet" href="code-quest-css/pfp.css">
+        <title>Profile</title>
+    </head>
+    <body>
+       <div class="Profile">
+        <label for="profile-upload" class="upload"> <!--label for - makes the image interactive, clicking it open-->
+        <img id="set-pfp" src="default-avatar.png" alt="profile-pre"/> <!--shows the defualt images first then updates w/ user's upload-->
+            </label>
+            <input type="file" id="profile-upload" accept="image/*" onchange="pfpImage(event)"> <!--lets user upload their own image and triggers preview/save logic, 
+                                                                                        Hidden file input triggered by clicking the image -->
+            <h2>Unice Ann</h2>
+            <p>Level 1</p>
+            <p>XP: 100</p>
+            <p>Achievements: None</p>
+        </div>
+       </div>
+       <script src="code-quest-js/prp.js"></script>
+    </body>
+</html>
